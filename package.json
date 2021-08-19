@@ -12,14 +12,15 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "NODE_ENV=productio tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "prepare": "NODE_ENV=productio tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -63,6 +64,7 @@
     "@types/styled-components": "^5.1.12",
     "babel-loader": "^8.2.2",
     "chromatic": "^5.9.2",
+    "eslint-plugin-prettier": "^3.4.0",
     "husky": "^7.0.1",
     "identity-obj-proxy": "^3.0.0",
     "react": "^17.0.2",
