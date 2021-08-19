@@ -12,10 +12,10 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "NODE_ENV=productio tsdx build",
+    "build": "NODE_ENV=production tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "NODE_ENV=productio tsdx build",
+    "prepare": "NODE_ENV=production tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
